@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Poppins;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button,
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.main-container {
+  max-width: 1800px;
+  width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  background: #1b212c;
+  padding: 0 10%;
+}
+
+/* ***************** Navbar *************** */
+
+.navbar {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.3rem 0;
+  position: fixed;
+  z-index: 100;
+  background-color: black;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  width: 80px;
+  filter: invert();
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar ul a {
+  color: #fff;
+  font-size: 1.3rem;
+  position: relative;
+  transition: 0.5s;
+}
+
+.navbar ul a:hover {
+  color: #fb4b29;
+}
+
+.navbar ul a:hover,
+.navbar ul .active {
+  color: #fb4b29;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.login-btn,
+.btn-sec button {
+  background: #fb4b29;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover,
+.btn-sec button:hover {
+  background: #ed4827;
+}
+
+/* ***************** Home *************** */
+
+.bottom-content {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-left {
+  width: 50%;
+  height: fit-content;
+  margin-top: 100px;
+}
+
+.bottom-left h1 {
+  width: 650px;
+  color: #ffd6ae;
+  font-size: 95px;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+.bottom-left p {
+  font-size: 18px;
+  color: #dbdbdb;
+  font-weight: 300;
+  margin: 10px 0 30px 0;
+}
+
+.btn-sec {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-sec button:last-child {
+  border: 2px solid #ffd6ae;
+  background: none;
+  color: #ffd6ae;
+}
+
+.btn-sec button:last-child:hover {
+  background: #ffd6ae;
+  color: #eb4625;
+}
+
+.bottom-right {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-effact {
+  width: 120%;
+}
+
+.shoes-img {
+  width: 100%;
+  position: absolute;
+  top: 18%;
+}
+
+/* ***************** Location *************** */
+
+.location {
+  height: 123vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location > h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+  color: whitesmoke;
+}
+
+.location .location-container {
+  margin-top: 1rem;
+}
+
+.location .location-container h5 {
+  border-bottom: 1px solid white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  transition: 0.5s;
+}
+
+.location .location-container h5:hover {
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+/* ***************** About *************** */
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+.about-container {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(211, 211, 211);
+}
+
+/* ***************** Contact *************** */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact > h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 45%;
+}
+
+.contact form > input {
+  border: 1px solid whitesmoke;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.contact .contact-form-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .contact-form-btn input {
+  background: whitesmoke;
+  color: black;
+  padding: .5rem 0;
+  width: 49%;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.contact .contact-form-btn input:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* ***************** Contact *************** */
+footer {
+    background-color: black;
+    padding: 2rem 0;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+
+}
+
+@media (max-width: 1100px) {
+  .main-container {
+    padding: 0 5%;
+  }
+  .bottom-left h1 {
+    width: 100%;
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .bottom-left p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo {
+    width: 70px;
+    z-index: 1000;
+  }
+  .login-btn {
+    z-index: 1000px;
+    margin-top: -10px;
+  }
+  .login-btn,
+  .btn-sec button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .nav-btn {
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+  }
+  .navbar .toggle-btn {
+    display: block;
+    width: 30px;
+    z-index: 100;
+  }
+  .toggle-btn img {
+    width: 100%;
+  }
+  .navbar ul {
+    display: none;
+    position: absolute;
+    left: -5%;
+    top: 0;
+    width: 110%;
+    background: black;
+    z-index: 100;
+    padding: 80px 0 25px 0;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .login-btn {
+    z-index: 1000;
+  }
+
+  .navbar ul.active {
+    display: block;
+  }
+
+  .bottom-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bottom-left {
+    max-width: 450px;
+    width: 100%;
+    margin-top: 13rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15ppx;
+  }
+
+  .bottom-left h1 {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  .btn-sec {
+    gap: 10px;
+  }
+  .bottom-right {
+    max-width: 400px;
+    width: 100%;
+  }
+  .shoes-img {
+    width: 80%;
+  }
+
+  .bg-effact {
+    width: 100%;
+  }
+
+  .location {
+    height: auto;
+  }
+
+  .location h1 {
+    font-size: 2.5rem;
+  }
+
+  .location .location-container h5 {
+    font-size: 1rem;
+  }
+
+  .about {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .contact form{
+    width: 100%;
+  }
+}
