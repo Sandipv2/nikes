@@ -1,120 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike - Just Do It.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/logo-white.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nike - Just Do It.</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon" />
-</head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="" />
+      </a>
+      <ul id="SideMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#catlogue">Catlogue</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-<body>
-  <nav class="navbar">
-    <a href="#" class="logo">
-      <img src="images/logo.png" alt="" />
-    </a>
-    <ul id="SideMenu">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#catlogue">Catlogue</a></li>
-      <li><a href="#location">Location</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <div class="nav-btn">
-      <button id="toggleBtn" class="toggle-btn">
-        <img src="images/bar-icon.svg" alt="" />
-      </button>
-    </div>
-  </nav>
-
-  <div class="main-container">
-    <div class="bottom-content" id="home">
-      <div class="bottom-left">
-        <h1>Your feet deserve the best</h1>
-        <p>Nike - Just Do It.</p>
+      <div class="nav-btn">
+        <button id="toggleBtn" class="toggle-btn">
+          <img src="images/bar-icon.svg" alt="" />
+        </button>
       </div>
-      <div class="bottom-right">
-        <img src="images/bg-effact.png" alt="" class="bg-effact" />
-        <img src="images/shoes-img.png" alt="" class="shoes-img" />
-      </div>
-    </div>
+    </nav>
 
-    <div class="catlogue" id="catlogue">
-      <h1>Catlogue</h1>
-
-      <div>
-        <img src="images/nike1.png" alt="">
-        <img src="images/nike2.png" alt="">
-        <img src="images/nike3.png" alt="">
-        <img src="images/nike4.png" alt="">
-        <img src="images/nike5.png" alt="">
-        <img src="images/nike6.png" alt="">
-        <img src="images/nike7.png" alt="">
-        <img src="images/nike8.png" alt="">
-      </div>
-    </div>
-
-
-    <div class="location" id="location">
-      <h1>- LOCATIONS -</h1>
-      <div class="location-container">
-        <h5>Kathmandu, Nepal</h5>
-        <h5>Satara Road, Katraj</h5>
-        <h5>ABC Chowk, NMV Vidyalay</h5>
-        <h5>Swargate</h5>
-        <h5>Mumbai</h5>
-        <h5>Gurugram, Haryana</h5>
-        <h5>Bangalore</h5>
-      </div>
-    </div>
-
-    <div class="about" id="about">
-      <div class="about-container">
-        <h1>- ABOUT -</h1>
-        <p>
-          Nike, Inc. is a global leader in the design, manufacturing, and
-          marketing of sportswear, footwear, and equipment. Established in
-          1964 by Bill Bowerman and Phil Knight, the company is headquartered
-          in Beaverton, Oregon. Renowned for its iconic "Swoosh" logo and
-          "Just Do It" slogan, Nike has become synonymous with innovation and
-          performance in sports apparel. It collaborates with top athletes
-          worldwide, offering products that blend cutting-edge technology with
-          modern style.
-          <br /> <br />
-          In addition to its athletic focus, Nike champions sustainability and
-          inclusivity, aiming to reduce environmental impact through
-          initiatives like Move to Zero. The company also fosters community
-          engagement by supporting sports programs and advocating for
-          diversity. With a global presence in over 190 countries, Nike
-          continues to inspire athletes and enthusiasts to push their limits
-          and embrace an active lifestyle.
-        </p>
-      </div>
-    </div>
-
-    <div class="contact" id="contact">
-      <h1>- CONTACT -</h1>
-
-      <form action="formSubmit.html">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
-        <input type="tel" name="phoneno" pattern="[0-9]{10}" placeholder="Phone No." required>
-        <input type="number" min="18" max="100" placeholder="Age" required>
-
-        <div class="contact-form-btn">
-          <input type="submit" value="Submit">
-          <input type="Reset" value="Reset">
+    <div class="main-container">
+      <div class="bottom-content" id="home">
+        <div class="bottom-left">
+          <h1>Your feet deserve the best</h1>
+          <p>Nike - Just Do It.</p>
         </div>
-      </form>
+        <div class="bottom-right">
+          <img src="images/bg-effact.png" alt="" class="bg-effact" />
+          <img src="images/shoes-img.png" alt="" class="shoes-img" />
+        </div>
+      </div>
+
+      <div class="catlogue" id="catlogue">
+        <h1>Catlogue</h1>
+
+        <div class="cat-container">
+          <div class="cat-card">
+            <img src="images/nike1.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike2.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike3.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike4.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike5.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike6.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike7.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+          <div class="cat-card">
+            <img src="images/nike8.png" alt="" />
+            <h2>Nike Air 1</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="location" id="location">
+        <h1>- LOCATIONS -</h1>
+        <div class="location-container">
+          <h5>Kathmandu, Nepal</h5>
+          <h5>Satara Road, Katraj</h5>
+          <h5>ABC Chowk, NMV Vidyalay</h5>
+          <h5>Swargate</h5>
+          <h5>Mumbai</h5>
+          <h5>Gurugram, Haryana</h5>
+          <h5>Bangalore</h5>
+        </div>
+      </div>
+
+      <div class="about" id="about">
+        <div class="about-container">
+          <h1>- ABOUT -</h1>
+          <p>
+            Nike, Inc. is a global leader in the design, manufacturing, and
+            marketing of sportswear, footwear, and equipment. Established in
+            1964 by Bill Bowerman and Phil Knight, the company is headquartered
+            in Beaverton, Oregon. Renowned for its iconic "Swoosh" logo and
+            "Just Do It" slogan, Nike has become synonymous with innovation and
+            performance in sports apparel. It collaborates with top athletes
+            worldwide, offering products that blend cutting-edge technology with
+            modern style.
+            <br />
+            <br />
+            In addition to its athletic focus, Nike champions sustainability and
+            inclusivity, aiming to reduce environmental impact through
+            initiatives like Move to Zero. The company also fosters community
+            engagement by supporting sports programs and advocating for
+            diversity. With a global presence in over 190 countries, Nike
+            continues to inspire athletes and enthusiasts to push their limits
+            and embrace an active lifestyle.
+          </p>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h1>- CONTACT -</h1>
+
+        <form action="formSubmit.html">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="tel"
+            name="phoneno"
+            pattern="[0-9]{10}"
+            placeholder="Phone No."
+            required
+          />
+          <input type="number" min="18" max="100" placeholder="Age" required />
+
+          <div class="contact-form-btn">
+            <input type="submit" value="Submit" />
+            <input type="Reset" value="Reset" />
+          </div>
+        </form>
+      </div>
     </div>
+    <footer>
+      <p>© 2024 Nike, Inc. All rights reserved</p>
+    </footer>
 
-  </div>
-  <footer>
-    <p>© 2024 Nike, Inc. All rights reserved</p>
-  </footer>
-</body>
+    <script>
+      var toggleBtn = document.getElementById("toggleBtn");
+      var SideMenu = document.getElementById("SideMenu");
 
+      toggleBtn.addEventListener("click", () => {
+        SideMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
